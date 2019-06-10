@@ -1,0 +1,944 @@
+/*Fonts*/
+/*@font-face {
+  font-family: Raleway;
+  src:url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: Raleway-Bold;
+    src:url ("../fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: DroidSan;
+  src:url("../fonts/DroidSans/");
+}*/
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'droid_sansbold';
+    src: url('../fonts/droidsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/droidsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TEMPLATE STYLES */
+html,
+body,
+.view {
+    height: 100%;
+    width: 100%;
+}
+.view-about{
+    height: 60%;
+    width: 100%;
+}
+
+/*Burger Menu Animation*/
+#burger-icon{
+    width: 25px;
+    height: 10px;
+    position: relative;
+    margin: 5px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+#burger-icon span{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #44CD81;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+/* Navigation*/
+.navbar {
+    background-color: transparent;
+}
+
+.menu-text{
+    text-transform: uppercase;
+    font-size: 68%;
+    letter-spacing: 6px;
+}
+.menu-burger{
+    width: 40%;
+    height: auto;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #000000;
+}
+
+footer.page-footer {
+    background-color: #070A11;
+    margin-top: 2rem;
+}
+
+.footer-copyright {
+    margin: 0 auto 0 auto;
+    padding: 2%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+/*Call to action*/
+
+.flex-center {
+    color: #fff;
+}
+
+.view-black{
+    background-color: #000000;
+}
+.view,
+.view-about {
+    background: url("../img/data/hero_pattern.png")no-repeat center center fixed;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#view-footer {
+    background: url("../img/data/footer.png")no-repeat center top !important;
+    background-color: #000000;
+}
+/*Contact section*/
+
+#contact .fa {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1C2331;
+}
+.ticket-btn{
+    margin: 2% auto 4% auto;
+    text-align: center;
+}
+.ticket-gap{
+    margin: 1% auto 5% auto !important;
+}
+.ticket-text{
+    font-family: 'Droid Sans', sans-serif;
+    text-align: center;
+    color: #000;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 95%;
+    line-height: 190%;
+}
+
+/* YOUR CUSTOM STYLES */
+/* 
+Headings: font-family: 'Raleway', sans-serif;
+text: font-family: 'Droid Sans', sans-serif;
+*/
+.dark-text{
+    color: #000000;
+}
+.fa-navicon{
+    color: #44CD81;
+    font-size: 200%;
+    margin-top: 10%;
+}
+.landing-heading{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    padding: 0 6% 0 6%;
+    text-transform: uppercase;
+}
+.landing-text{
+    text-transform: uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 65%;
+    letter-spacing: 8px;
+    font-weight: 100;
+}
+.heading-title{
+    color: #44CD81;
+    font-family: 'ralewaybold';
+}
+.top-nav-text{
+    text-transform: uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 12px;
+}
+.logo-img{
+    margin: auto;
+    position: relative;
+    top: 65px;
+}
+.scroll-img{
+    margin: auto;
+    position: static;
+    top: 540px;
+    width: 3%;
+    height: auto;
+}
+/* Will return
+.scroll-img{
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 500px;
+    width: 3em;
+    height: auto;
+}
+.scroll-text{
+    color: #BEC3D3;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    bottom: 0;
+}*/
+.issue-button-text{
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 6px;
+    font-size: 70%;
+    font-weight: 900;
+}
+.heading-font{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 300%;
+    text-transform: uppercase;
+}
+.heading-font2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 270%;
+    text-transform: uppercase;
+}
+.sub-heading-font{
+    font-family: 'Raleway', sans-serif;
+    font-size: 145%;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: -6.5%;
+}
+.btn-align{
+    margin-left: 4.2%;
+}
+.align-text-left{
+    margin-top: -5%;
+    margin-left: 48.6%;
+}
+.text-font{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 85%;
+    line-height: 200%;
+}
+
+ul.heading-bullets-none{
+    list-style-type: none;
+}
+ul.heading-bullets-none-about{
+    list-style-type: none;
+    margin-top: 0%;
+}
+ul.square-bullets {
+    list-style-type: square;
+}
+
+.grey-text{
+    color: #C5C4C9;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1em;
+    line-height: 210%;
+}
+
+.square-services{
+    width: 8px;
+    height: 8px;
+    background: #44CD81;
+    margin-top: 7%;
+    margin-left: -3%;
+}
+.rectangle{
+    width: 11px;
+    height: 7px;
+    background: #44CD81;
+    margin: 9% auto 8% auto;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #44CD81;
+    margin: 9% auto 9% auto;
+
+}
+.triangle-about{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 9px solid #44CD81;
+    margin: 9% auto 9% auto;
+    position: relative;
+    top: 230px;
+}
+.cross{
+    margin-top: 5%;
+    margin-bottom: 18%;
+    background: #44CD81;
+    height: 12.5px;
+    position: relative;
+    width: 2.5px;
+}
+.cross:after{
+    background: #44CD81;
+    content: "";
+    height: 2.5px;
+    left: -5px;
+    position: absolute;
+    top: 5px;
+    width: 12.5px;
+}
+.cross-right{
+    float: right;
+}
+.cross-left{
+    float: left;
+}
+
+h6{
+    padding: 5%;
+}
+.section-spacing{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+hr{
+    margin-top: 1rem;
+    margin-right: 49.5%;
+    margin-bottom: 1rem;
+    margin-left: 49.5%;
+    border: 0;
+    border-top: 1px solid;
+    border-color: #44CD81;
+    border-width: 8px;
+}
+
+.line-divide{
+    margin-top: 5rem;
+    margin-right: 0.6%;
+    margin-left: 5%;
+    height: 3px;
+    background: #46CD7E;
+    background: -webkit-linear-gradient(left, #46CD7E , #6FC908);
+    background: -o-linear-gradient(right, #46CD7E, #6FC908);
+    background: -moz-linear-gradient(right, #46CD7E, #6FC908);
+    background: linear-gradient(to right, #46CD7E , #6FC908);
+}
+.line-divide2-a{
+    margin-top: 2rem;
+    /*margin-right: 32%;*/
+    margin-right: 25%;
+    margin-left: 17%;
+    height: 2px;
+    background: #46CD7E;
+    background: -webkit-linear-gradient(left, #46CD7E , #6FC908);
+    background: -o-linear-gradient(right, #46CD7E, #6FC908);
+    background: -moz-linear-gradient(right, #46CD7E, #6FC908);
+    background: linear-gradient(to right, #46CD7E , #6FC908);
+}
+
+.line-divide2-a:before{
+    content: "";
+    width: 20%;
+    height: 2px;
+    display: block;
+    /*float: right;*/
+    position: absolute;
+    right: 0;
+}
+
+.carousel-padding{
+    margin-bottom: 10%;
+}
+.shift-right{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.carousel-heading{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 145%;
+    -ms-text-align: center;
+    text-align: center;
+    -ms-margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
+}
+.carousel-text{
+    font-size: 90%;
+    color: #C5C4C9;
+    line-height: 200%;
+    font-family: 'Droid Sans', sans-serif;
+}
+.icon-count{
+    margin-bottom: 5%;
+}
+.service-count{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.icon-size{
+    font-size: 80px;
+    margin-left: 1%;
+}
+.carousel-fit{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.bold{
+    font-weight: bold;
+}
+.data-control{
+    text-align: center;
+    margin-bottom: 6%;
+}
+.fa-caret-right{
+    color: #44CD81;
+    font-size: 170%;
+}
+.fa-caret-left{
+    color: #44CD81;
+    font-size: 170%;
+}
+.caret-spacing{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.learn-more{
+    margin: 8% auto 6% auto;
+}
+
+.left{
+    margin-left: -45%;
+}
+.right{
+    margin-right: -45%;
+}
+.fit-good{
+    margin-left: -37%;
+}
+.good-fit{
+    display: block;
+    width: 100%
+}
+
+.panel-settings{
+    background-color: #44CD81;
+    color: #ffffff;
+    width: 70% !important;
+    height: auto;
+    padding: 7%;
+    margin: -20% auto 8% 9%;
+}
+.btn-outline-black{
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: transparent;
+}
+.button-text{
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.btn-outline-black:hover, 
+.btn-outline-black:focus, 
+.btn-outline-black:active, 
+.btn-outline-black:active:focus{
+    color: #ffffff;
+    background: #41CE80;
+    border: 2px solid #41CE80;
+    box-shadow: 2px 2px 2px #888888;
+}
+.btn-outline-white:hover, 
+.btn-outline-white:focus, 
+.btn-outline-white:active, 
+.btn-outline-white:active:focus{
+    color: #ffffff;
+    background: #41CE80;
+    border: 2px solid #41CE80;
+    box-shadow: 2px 2px 2px #888888;
+}
+.button-text:hover{
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.button-space{
+    margin-top: 5%;
+}
+.footer-button{
+    margin-top: 16%;
+}
+.btn-outline-white{
+    z-index: 2;
+    position: relative; 
+}
+.lets-chat{
+    /*NEW Will return
+    z-index: 1;
+    position: relative;
+    width: 30%;
+    height: auto;
+    right: 40%;*/
+    width: 180px;
+    height: auto;
+    margin-top: 18%;
+}
+.grey-text-good-fit{
+    color: #C5C4C9;
+    font-size: 90%;
+    padding: 0 50% 0 0%;
+    margin-bottom: 10%;
+    font-family: 'Droid Sans', sans-serif;
+    text-align: justify;
+}
+
+.client-logo-ctrack{
+    width: 75%;
+    height: auto;
+}
+.client-logo-occ{
+    width: 75%;
+    height: auto;
+    margin-top: 10%;
+}
+.client-logo-dsg{
+    width: 75%;
+    height: auto;
+    margin-top: 2%;
+}
+.client-logo-tide{
+    width: 65%;
+    height: auto;
+    margin-top: 6%;
+}
+.client-logo-star,
+.client-logo-first,
+.client-logo-jaff,
+.client-logo-ned{
+    width: 40%;
+    height: auto;
+    margin-left: 20%;
+}
+.client-logo-eureka{
+    width: 40%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.badge-footer{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+#images{
+    text-align: center;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 280%;
+    color: #fff;
+    margin-top: 12%;
+}
+.footer-text{
+    color: #C5C4C9;
+    font-size: 85%;
+}
+.nav-data{
+    text-align: center;
+    margin: 3% auto 2% auto;
+}
+.nav-item{}
+
+.nav-text{
+    font-size: 85%;
+    color: #fff;
+}
+.footer-copyright-text{
+    color: #fff;
+    font-size: 75%;
+    margin: 20% auto 20% auto;
+    text-align: center;
+}
+
+.control{
+    font-size: 18px;
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.control input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.control__indicator{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #e6e6e6;
+}
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #ccc;
+}
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: #44CD81;
+}
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: #44CD81;
+}
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+	background: #7b7b7b;
+}
+.social-icon{
+    font-size: 300%;
+}
+
+/*About us Page*/
+.about-us-heading{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 4% auto 5% auto;
+}
+.about-us-text{
+    font-family: 'Droid Sans', sans-serif;
+    text-align: center;
+    color: #C5C4C9;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 95%;
+    line-height: 190%;
+}
+.gap{
+    margin-bottom: 15%;
+}
+.panel-settings-about{
+    background-color: #000000;
+    color: #ffffff;
+    width: 72% !important;
+    height: auto;
+    padding: 7%;
+    margin: -30% auto 8% 16%;
+}
+.panel-heading{
+    font-weight: 700;
+    font-size: 200%;
+    margin-bottom: 10%;
+}
+.panel-text{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 77%;
+    line-height: 200%;
+}
+.process-heading{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 9% auto 5% auto;
+}
+.carousel-heading-about1{
+    margin-bottom: 5%;
+}
+.carousel-heading-about{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.carousel-about-us-text{
+    font-family: 'Droid Sans', sans-serif;
+    text-align: center;
+    color: #C5C4C9;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.align-carousel-item{
+    margin-left: 12%;
+}
+.align-carousel-item1{
+    margin-left: 4%;
+}
+.align-carousel-item2{
+    margin-left: 16%;
+}
+.section-space{
+    margin-bottom: 20%;
+}
+.about-counter{
+    width: 120%;
+    height: 120%;
+    margin-bottom: 5%;
+    margin-left: -10%;
+}
+
+/*Careers Page*/
+.panel-settings-career{
+    background-color: #44CD81;
+    color: #ffffff;
+    width: 75% !important;
+    height: auto;
+    padding: 7%;
+    margin: -55% auto 40% auto;
+}
+.panel-heading-career{
+    font-weight: 700;
+    font-size: 220%;
+    margin-top: 15%;
+}
+.button-text-career{
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+.gap-career{
+    margin-bottom: 15%;
+}
+.left-career{
+    margin-left: -35.5%;
+}
+.good-fit-career{
+    display: block;
+    margin: 0 auto;
+    width: 109%;
+    height: auto;
+}
+.img-spacing{
+    margin: 30%;
+}
+
+/*Contact Page*/
+.contact-heading{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: -5% auto 0% auto;   
+}
+.gap-contact{
+    margin-top: 5%;
+    margin-bottom: 10%;   
+}
+.link-space{
+    margin-top: 8%;
+}
+.alert-success {
+    /*background-color: #dff0d8;*/
+    color: #3c763d;
+    background: #dff0d8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#dff0d8, #CBEFBD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#dff0d8, #CBEFBD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#dff0d8, #CBEFBD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#dff0d8, #CBEFBD); /* Standard syntax (must be last) */
+    border: 2px solid #d0e9c6;
+    text-align: center;
+}
+.alert-danger{
+    /*background-color: #f2dede;*/
+    color: #a94442;
+    background: #f2dede; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f2dede, #F2ACAC); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f2dede, #F2ACAC); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f2dede, #F2ACAC); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f2dede, #F2ACAC); /* Standard syntax (must be last) */
+    border: 2px solid #F37C7C;
+    text-align: center;
+}
+.box-shadow{
+    -webkit-box-shadow: 2px 2px 5px 0px grey;
+    -moz-box-shadow: 2px 2px 5px 0px grey;
+    box-shadow: 2px 2px 5px 0px grey;
+    margin-bottom: 5%;
+    border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+}
+#errorHeading{
+    text-align: center;
+}
+
+/*Full Screen overlay*/
+.current-page{
+    text-decoration: underline;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #000;
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 4% 1% 4%;
+    text-decoration: none;
+    font-size: 17px;
+}
+.logo-img1{
+    position: absolute;
+    left: 48%;
+    top: 10%;
+    width: 50px;
+}
+.overlay{
+    position: fixed;
+    top: 4%;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    background: url("../img/data/fullscreen-menu.jpg")repeat center top !important;
+    background: rgba(68,204,128,1);
+    overflow-x: hidden;
+    z-index: 100;
+    transition: all 0.8s;
+}
+.overlay__content{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    text-align: left;
+    padding-left: 7.5%;
+    margin-top: 32px;
+}
+.overlay a {
+    padding: 10px;
+    color: #fff;
+    font-size: 140%;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+.overlay a:hover {
+    color: #000;
+}
+.overlay-line-divide{
+    margin-top: 6%;
+    margin-right: 40%;
+    margin-left: 8%;
+    height: 3px;
+    background: #fff;
+}
+.overlay .closeBtn{
+    margin-top: 4.5%;
+    margin-right: 9%;
+    float: right;
+    font-size: 160%;
+}
+.fa-times{
+    font-size: 65%
+}
+.overlay-close-btn{
+    font-size: 50%;
+}
+.overlay-footer{
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    color: #fff;
+    font-size: 140%;
+}
+
+.lower-case{
+    text-transform: lowercase;
+}

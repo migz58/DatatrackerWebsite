@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62028061-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Datatracker/Contact</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    
+    <!-- Importing Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- mobile CSS -->
+    <link href="../css/mobile.css" rel="stylesheet">
+</head>
+
+<body style="width: 100%;">
+    <!-- Modal-->
+    <!-- Register Modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times; Close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <h1 class="heading-title">Register</h1><br/>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">First Name</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter First Name here">
+                            </div>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Last Name</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Last Name here">
+                            </div>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Username/Email Address here">
+                            </div>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" placeholder="Enter Password here">
+                            </div>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" placeholder="Enter Password again">
+                            </div>
+                        </div>
+                        <fieldset class="form-group">
+                            <label class="control control--checkbox">Remember me
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success waves-effect">SUBMIT</button>
+                    <button type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Register Modal -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times; Close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <h1 class="heading-title">Login</h1><br/>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" placeholder="Enter Username/Email Address here">
+                            </div>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" placeholder="Enter Password here">
+                            </div>
+                        </div>
+                        <fieldset class="form-group">
+                            <label class="control control--checkbox">Remember me
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success waves-effect">LOGIN</button>
+                    <button type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Login Modal -->
+    <!-- /.Modal-->
+
+    <!-- Overlay -->
+    <div id="nav" class="overlay">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="closeBtn" onclick="closeNav()"> 
+                    <span class="overlay-close-btn">CLOSE</span> <i class="fa fa-times"></i>
+                </a>
+                <div class="overlay-line-divide"></div>                
+            </div>
+        </div>
+
+        <div class="overlay__content">
+            <a href="../index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="career.html">CAREER</a>
+            <a href="#home" onclick="closeNav()"><span class="current-page">CONTACT</span></a>
+        </div>
+        <div class="row">
+            <div class="overlay-footer">
+                <p>Office: 066 475 2386</p>
+                <p>Miguel: 082 748 0690</p>
+                <p>queries@datatracker.co.za</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topnav fixed-top scrolling-navbar">
+        <a href="#" class="openBtn waves-effect" onclick="openNav()">
+            <span class="menu-text">MENU</span> 
+            <img src="../img/data/burger.png" class="menu-burger">
+        </a>
+        <!--<a href="#" data-toggle="modal" data-target="#myModal2">
+            <span class="menu-text">register</span>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#myModal1">
+            <span class="menu-text">login</span>
+        </a>-->
+        <a href="../index.html" class="page-scroll">
+            <img class="logo-img1" src="../img/data/Logo.png" alt="Datatracker Logo">
+        </a>
+    </div>
+    <!--/.Overlay-->
+
+    <!--Mask-->
+    <div class="view hm-black-strong" id="home">
+        <!--<div class="row">
+            <div class="col-md-12">
+                <img class="logo-img" src="../img/data/Logo.png" alt="Datatracker Logo">
+            </div>
+        </div>-->
+        <div class="full-bg-img flex-center">
+            <ul class="heading-bullets-none-about">
+                <li>
+                    <p class="wow fadeInDown landing-text">We would love to hear from you!</p>
+                </li>
+                <li>
+                    <h1 class="h1-responsive wow fadeInDown landing-heading" data-wow-delay="0.3s">contact us</h1>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#about" class="page-scroll">
+                    <!--<div class="triangle-about"></div>-->
+                    <img class="scroll-img" src="../img/data/scroll.png" alt="Scroll Img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--/.Mask-->
+
+    <!-- Main container-->
+    <div class="container">
+        <div id="about"></div><br/>
+
+        <!--Section: About-->
+        <section class="wow bounceIn" data-wow-delay="0.2s">
+            <div class="rectangle"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <h1 class="h1-responsive wow fadeInDown about-us-heading" data-wow-delay="0.2s">give us a call</h1>
+                    <!--FORM NOT WORKING, TO WIRE UP UNCOMMENT THIS AND DELETE ABOVE HEADING AND UNCOMMENT Contact Form BELOW
+                    <h1 class="h1-responsive wow fadeInDown about-us-heading" data-wow-delay="0.2s">please fill out the form below...</h1>
+                    <p class="about-us-text">
+                       Or give us a call
+                    </p>
+                    -->
+                    <h6 class="h1-responsive wow fadeInUp contact-heading" data-wow-delay="0.2s">066 475 2386 / 082 748 0690</h6>
+
+                    <h1 class="h1-responsive wow fadeInDown about-us-heading" data-wow-delay="0.2s">or email us at</h1>
+                    <h6 class="h1-responsive wow fadeInUp contact-heading lower-case" data-wow-delay="0.2s">queries@datatracker.co.za</h6>
+                </div>
+            </div>
+        </section>
+        <!--Section: About-->
+
+        <div class="line-divide gap-contact"></div>
+
+        <!-- Contact Form 
+        <section>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="alert alert-success box-shadow" id="successEnquiry" name="successEnquiry">
+                  <strong>Success!</strong> <span > Thank you for contacting us. One of our consultants will be in contact with you.</span>
+                </div>
+                <div class="alert alert-danger box-shadow" id="errorEnquiry" name="errorEnquiry">
+                  <strong ><span id="errorHeading" name="errorHeading"></span></strong> 
+                  <div id="errorMessage" name="errorMessage"></div>
+                </div>
+            </div>
+            </div>
+            <div class="row" name="contactUsForm" id="contactUsForm">
+                
+
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" name="name" id="name" class="form-control">
+                        <label for="name" class="">Name</label>
+                    </div><br/>
+                    <div class="md-form">
+                        <input type="email" id="emailAddress" name="emailAddress" class="form-control">
+                        <label for="emailAddress" class="">Email</label>
+                    </div><br/>
+                    <div class="md-form">
+                        <input type="text" id="contactNumber" name="contactNumber" class="form-control">
+                        <label for="contactNumber" class="">Contact Number</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 button-space">
+                            <button type="button" id="submitEnquiry" name="submitEnquiry"  class="btn btn-outline-black waves-effect"><span class="button-text">submit</span></button>
+                        </div>
+                        <div class="col-md-4 link-space">
+                            COMMENT A TAG OUT PLEASE
+                                <a><span class="issue-button-text">LOG AN ISSUE?</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         /.Contact Form -->
+
+        <!--TICKETING SYTEM SECION
+         <div class="line-divide ticket-gap"></div>
+
+        
+        <section class="wow bounceIn" data-wow-delay="0.2s">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="about-us-text">
+                       Having trouble? <br>
+                       Send us a request through our helpDesk
+                    </p>
+                    <div class="ticket-btn">
+                        <a href="http://tickets.datatracker.co.za/osticket/" target="_blank">
+                            <button type="button" class="btn btn-outline-black waves-effect"><span class="button-text">Create a Ticket</span></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        /.Ticket Link-->
+    </div>
+    <!--/ Main container-->
+
+    <!--Footer-->
+    <div id="view-footer">
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row footer-spacing">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 offset-lg-1">
+                    <h2 class="footer-heading">GET IN TOUCH</h2>
+                    <p class="footer-text">Contacting us is only a click away.</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <a href="#about" class="page-scroll">
+                        <img class="lets-chat" src="../img/data/letsChat.png" alt="Client Logo">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="line-divide2-a"></div>
+
+            <div class="row">
+                <ul class="nav nav-data">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link nav-text">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link nav-text page-scroll">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="career.html" class="nav-link nav-text page-scroll">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link nav-text page-scroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <div class=" text-center">
+            <div class="col fadeInDown">
+                <a href="https://www.facebook.com/DatatrackerZA/" target="_blank" class="social-icon">
+                    <i class="fa fa-facebook-square" style="color: #3b5998"></i>
+                </a>
+                <a href="https://twitter.com/datatrackerZA" target="_blank" class="social-icon">
+                    <i class="fa fa-twitter-square" style="color: #1FA3ED"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/datatracker-pty-ltd?trk=top_nav_home" target="_blank" class="social-icon">
+                    <i class="fa fa-linkedin-square" style="color: #0274B3"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="">
+            <div class="footer-copyright">
+                <span class="footer-copyright-text">Copyright. DataTracker 2019</span>
+            </div>
+        </div>
+
+        <div id="images">
+            <img class="badge-footer" src="../img/data/Badge1.png">
+            <img class="badge-footer" src="../img/data/Badge3.png">
+        </div>
+    </div>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+
+    <script>
+        function init_map() {
+
+            var var_location = new google.maps.LatLng(-26.1374044, 27.9783224);
+
+            var var_mapoptions = {
+                center: var_location,
+
+                zoom: 15
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Johannesburg"
+            });
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+
+        $( document ).ready(function() {
+            $("#errorEnquiry").hide();
+            $("#successEnquiry").hide();
+           
+            $("#submitEnquiry" ).click(function() {
+               var emailAddress = $("#emailAddress").val();
+              var name = $("#name").val();
+              var contactNumber = $("#contactNumber").val();
+              var message = $("#message").val();
+
+              var request = {
+                Name: name,
+                EmailAddress: emailAddress,
+                ContactNumber: contactNumber,
+                Message: message
+              };
+
+              var jsonPost = JSON.stringify(request);
+
+              $.ajax({
+                    dataType: 'json',
+                    accept: 'application/json',
+                    type: "POST",
+                    url: "http://timetrackerapi.datatracker.co.za/api/ContactUs",
+                    data: request,
+                    success: function (data) {      
+                        $("#errorEnquiry").hide();
+                        $("#successEnquiry").show();
+                    },
+                    error: function (x, y, z) {
+                        var response = x.responseText;
+                        var parsedJson = JSON.parse(response);
+                        $("#successEnquiry").hide();
+                        if(x.status == 400){
+                            var textbuilder = "<hr /><ul>";
+                            for(var i=0; i<parsedJson.Data.length; i++){
+                                textbuilder += "<li>" + parsedJson.Data[i] + "</li>";
+                            }
+                            textbuilder += "</ul>"
+
+                            $("#errorHeading").text(parsedJson.Heading);
+                            $("#errorEnquiry").show();
+                            $("#errorMessage").html(textbuilder);
+                        }
+                        else{
+                            $("#errorHeading").text("Failed!");
+                            $("#errorEnquiry").show();
+                            $("#errorMessage").text("Something went wrong :( please contact us on queries@datatracker.co.za.");                      
+                        }
+
+                    }
+                        
+                });
+            });
+        });
+
+        
+
+    </script>
+
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
